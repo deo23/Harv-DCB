@@ -21,21 +21,22 @@ void board5(){
 	
 	
 	/*TAMPILAN PAPAN MAP*/
-	gotoxy(47,1);printf("|     |     |     |\n");
-	gotoxy(42,2);printf("  1  |  2  |  3  |  4  |  5  \n"); //tempat penyimpanan bidak 1-5
-	gotoxy(42,3);printf("_____|_____|_____|_____|_____\n");
-	gotoxy(47,4);printf("|     |     |     |\n");
-	gotoxy(42,5);printf("  6  |  7  |  8  |  9  |  10  \n");//tempat penyimpanan bidak 6-10
-	gotoxy(42,6);printf("_____|_____|_____|_____|_____\n");
-	gotoxy(47,7);printf("|     |     |     |\n");
-	gotoxy(42,8);printf("  11 |  12 |  13 |  14 |  15 \n"); //tempat penyimpanan bidak 11-15
-	gotoxy(42,9);printf("_____|_____|_____|_____|_____\n");
-	gotoxy(47,10);printf("|     |     |     |\n");
-	gotoxy(42,11);printf("  16 |  17 |  18 |  19 |  20 \n"); //tempat penyimpanan bidak 16-20
-	gotoxy(42,12);printf("_____|_____|_____|_____|_____\n");
-	gotoxy(47,13);printf("|     |     |     |\n");
-	gotoxy(42,14);printf("  21 |  22 |  23 |  24 |  25 \n"); //tempat penyimpanan bidak 21-25
-	gotoxy(47,15);printf("|     |     |     |\n");	
+	gotoxy(47,0);printf(" ____ ____ ____ ____ ____\n");
+	gotoxy(47,1);printf("|    |    |    |    |    |\n");
+	gotoxy(47,2);printf("| 1  | 2  | 3  | 4  |  5 | \n"); //tempat penyimpanan kotak 1-5
+	gotoxy(47,3);printf("|____|____|____|____|____|\n");
+	gotoxy(47,4);printf("|    |    |    |    |    |\n");
+	gotoxy(47,5);printf("|  6 |  7 |  8 |  9 | 10 | \n");//tempat penyimpanan kotak 6-10
+	gotoxy(47,6);printf("|____|____|____|____|____|\n");
+	gotoxy(47,7);printf("|    |    |    |    |    |\n");
+	gotoxy(47,8);printf("| 11 | 12 | 13 | 14 | 15 |  \n"); //tempat penyimpanan kotak 11-15
+	gotoxy(47,9);printf("|____|____|____|____|____|\n");
+	gotoxy(47,10);printf("|    |    |    |    |    |\n");
+	gotoxy(47,11);printf("| 16 | 17 | 18 | 19 | 20 | \n"); //tempat penyimpanan kotak 16-20
+	gotoxy(47,12);printf("|____|____|____|____|____|\n");
+	gotoxy(47,13);printf("|    |    |    |    |    |\n");
+	gotoxy(47,14);printf("| 21 | 22 | 23 | 24 | 25 |  \n"); //tempat penyimpanan kotak 21-25
+	gotoxy(47,15);printf("|____|____|____|____|____|\n");	
 	/*END TAMPILAN PAPAN MAP*/
 
 	printf("\n");		
