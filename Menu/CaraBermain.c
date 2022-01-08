@@ -1,5 +1,5 @@
 void CaraBermain();
-//Modul untuk memanggil cara bermain
+//Modul untuk menampilkan cara bermain
 //Author : Cintia Ningsih
 //I.S    : Cara bermain dan aturan dalam permainan belum di tampilkan
 //F.S    : Cara bermain dan aturan dalam permainan sudah ditampilkan
