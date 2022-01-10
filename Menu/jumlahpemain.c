@@ -8,24 +8,25 @@
 
 int jumlahPemain(){
     int pemain;
-	system("CLS");
-	printf("\n\n");
-    printf("  ***                    ***\n");
-    printf("   ***                  ***\n");
-    printf("    ***                ***\n");
-    printf("     ***              ***\n");
-    printf("      ***            ***   **********\n");
-    printf("       ***          ***    **\n");
-    printf("        ***        ***     **\n");
-    printf("         ***      ***      **********\n");
-    printf("          ***    ***               **\n");
-    printf("           ***  ***                **\n");
-    printf("            ******         **********\n\n");
-	printf("-----------------------------------------------\n\n");
-    printf("(1) Player vs Computer\n");
-    printf("(2) Player vs Player\n");
-    printf("(0) Menu Utama\n");
-    printf("Silakan pilih Mode Permainan :\n ");
+    system("CLS");
+    system("color 1");
+    printf("\n\n\n\n\n\n\n\n\n\n");
+    printf("\t\t\t\t\t\t\t\t  ***                  ***\n");
+    printf("\t\t\t\t\t\t\t\t   ***                ***\n");
+    printf("\t\t\t\t\t\t\t\t    ***              ***\n");
+    printf("\t\t\t\t\t\t\t\t     ***            ***   **********\n");
+    printf("\t\t\t\t\t\t\t\t      ***          ***    **\n");
+    printf("\t\t\t\t\t\t\t\t       ***        ***     **\n");
+    printf("\t\t\t\t\t\t\t\t        ***      ***      **********\n");
+    printf("\t\t\t\t\t\t\t\t         ***    ***               **\n");
+    printf("\t\t\t\t\t\t\t\t          ***  ***                **\n");
+    printf("\t\t\t\t\t\t\t\t           ******         **********\n\n");
+    printf("\t\t\t\t\t\t\t\t --------------------------------\n");
+    printf("\t\t\t\t\t\t\t\t | (1) Player vs Computer	|\n");
+    printf("\t\t\t\t\t\t\t\t | (2) Player vs Player		|\n");
+    printf("\t\t\t\t\t\t\t\t | (0) Menu Utama		|	\n");
+    printf("\t\t\t\t\t\t\t\t --------------------------------\n\n");
+    printf("\t\t\t\t\t\t\t\tSilakan pilih Mode Permainan :  ");
     scanf("%d", &pemain);
 
     switch (pemain)
