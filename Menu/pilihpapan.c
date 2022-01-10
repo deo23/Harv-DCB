@@ -8,20 +8,24 @@ void pilihPapan(){
     int jenispapan;
 
     system("CLS");
-	printf("*	***			***	  *\n");
-	printf("*	***			***	  *\n\n");
-	printf("*		***	***		  *\n");
-	printf("*		***	***		  *\n\n");
-	printf("*		***	***		  *\n");
-	printf("*		***	***		  *\n\n");
-	printf("*	***			***	  *\n");
-	printf("*	***			***	  *\n\n");
-    printf("Pilih Papan\n");
-    printf("(1) Papan 5x5\n");
-    printf("(2) Papan 7x7\n");
-    printf("(3) Papan 9x9\n");
-    printf("(0) Menu Utama\n");
-    printf("Masukkan Pilihan :\n");
+    system("color 3");
+    printf("\n\n\n\n\n\n\n\n\n\n");
+    gotoxy(70,8);printf("                  PILIH PAPAN                    \n");
+    gotoxy(70,9);printf("  ____________________________________________   \n");
+    gotoxy(70,10);printf(" |   ______________________________    ____   | \n");
+    gotoxy(70,11);printf(" |  |       _______________________   |    |  |   \n");
+    gotoxy(70,12);printf(" |  |   |  |                       |  |    |  |\n");
+    gotoxy(70,13);printf(" |  |   |  |    (1) Papan 5x5      |  |    |  |\n");
+    gotoxy(70,14);printf(" |  |   |  |                       |  |    |  |\n");
+    gotoxy(70,15);printf(" |  |   |  |    (2) Papan 7x7      |  |    |  |\n");
+    gotoxy(70,16);printf(" |  |   |  |                       |  |    |  |\n");
+    gotoxy(70,17);printf(" |  |   |  |    (3) Papan 9x9      |  |    |  |\n  ");
+    gotoxy(70,18);printf(" |  |   |  |                       |__|    |  | \n");
+    gotoxy(70,19);printf(" |  |   |  |_______________________________|  |\n");
+    gotoxy(70,20);printf(" |  |   |_______________________________   ___| \n");
+    gotoxy(70,21);printf(" |  |___________________________________|  |   \n");
+    gotoxy(70,22);printf(" |_________________________________________| \n\n\n");
+    gotoxy(77,25);printf("Masukkan Pilihan : ");
     scanf("%d", &jenispapan);
 
     switch(jenispapan){
