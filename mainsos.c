@@ -763,7 +763,7 @@ void maingame(){
 				Mudah5();
 				if(game_done()){
 					board5();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -784,7 +784,7 @@ void maingame(){
 				Mudah7();
 				if(game_done()){
 					board7();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -805,7 +805,7 @@ void maingame(){
 				Mudah9();
 				if(game_done()){
 					board9();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -826,7 +826,7 @@ void maingame(){
 				Menengah5();
 				if(game_done()){
 					board5();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -847,7 +847,7 @@ void maingame(){
 				Menengah7();
 				if(game_done()){
 					board7();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -868,7 +868,7 @@ void maingame(){
 				Menengah9();
 				if(game_done()){
 					board9();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -889,7 +889,7 @@ void maingame(){
 				Sulit5();
 				if(game_done()){
 					board5();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -910,7 +910,7 @@ void maingame(){
 				Sulit7();
 				if(game_done()){
 					board7();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -931,7 +931,7 @@ void maingame(){
 				Sulit9();
 				if(game_done()){
 					board9();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					SimpanSkor(Player1);
@@ -952,13 +952,13 @@ void maingame(){
 				duaPemain5();
 				if(game_done()){
 					board5();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
-					printf("Player 1\t");
+					printf("\n\n\t\t\t\t\tPlayer 1\n");
 					SimpanSkor(Player1);
 				
-					printf("\nPlayer 2\t");
+					printf("\n\n\t\t\t\t\tPlayer 2\n");
 					SimpanSkor(Player2);
 					showScore();
 					if(mainLagi()){
@@ -977,7 +977,7 @@ void maingame(){
 				duaPemain7();
 				if(game_done()){
 					board7();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					printf("Player 1\t");
@@ -1003,7 +1003,7 @@ void maingame(){
 				duaPemain9();
 				if(game_done()){
 					board9();
-                	printf("Permainan Selesai!\n");
+                	printf("\t\t\t\t\tPermainan Selesai!\n");
 					pemenang();
 					HitungSkor();
 					printf("Player 1\t");
@@ -1823,7 +1823,7 @@ void beginBoard(){
 
 void board5(){
 	system("CLS");
-	system("color d6");
+	system("color 2");
 	/*TAMPILAN PAPAN*//*TAMPILAN PAPAN YANG AKAN DIISI INPUT PLAYER*/
 	gotoxy(57,8);printf(" ____ ____ ____ ____ ____\n");
 	gotoxy(57,9);printf("|    |    |    |    |    |\n");
@@ -1869,16 +1869,16 @@ void board5(){
 		gotoxy(63,28);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
 	}
 	else if (players == 2){
-		gotoxy(63,26);printf("\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::::\n");
-		gotoxy(63,27);printf("\t\t\t\t\t:: Player1 dapat %d poin, dan player2 %d poin::\n", Player1, Player2);
-		gotoxy(63,28);printf("\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::::\n");
+		gotoxy(27,26);printf("\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::::\n");
+		gotoxy(27,27);printf("\t\t\t\t\t:: Player1 dapat %d poin, dan player2 %d poin ::\n", Player1, Player2);
+		gotoxy(27,28);printf("\t\t\t\t\t::::::::::::::::::::::::::::::::::::::::::::::\n");
 	}
 	return;
 }
 
 void board7(){
 	system("CLS");
-	system("color f6");
+	system("color 2");
 	/*TAMPILAN PAPAN*//*TAMPILAN PAPAN YANG AKAN DIISI INPUT PLAYER*/
 	gotoxy(47,5);printf(" ____ ____ ____ ____ ____ ____ ____\n");
 	gotoxy(47,6);printf("|    |    |    |    |    |    |    |\n");
@@ -1931,12 +1931,12 @@ void board7(){
 	printf("\n");		
 	if(players == 1){
 		gotoxy(63,29);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
-		gotoxy(63,30);printf(":: Player dapat %d poin, dan komputer %d poin::\n", Player1, Computer);
+		gotoxy(63,30);printf(":: Player dapat %d poin, dan komputer %d poin ::\n", Player1, Computer);
 		gotoxy(63,31);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
 	}
 	else if (players == 2){
 		gotoxy(63,29);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
-		gotoxy(63,30);printf(":: Player1 dapat %d poin, dan player2 %d poin::\n", Player1, Player2);
+		gotoxy(63,30);printf(":: Player1 dapat %d poin, dan player2 %d poin ::\n", Player1, Player2);
 		gotoxy(63,31);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
 	}
 	return;
@@ -2008,14 +2008,14 @@ void board9(){
 
     printf("\n");		
 	if(players == 1){
-		gotoxy(63,32);printf("::::::::::::::::::::::::::::::::::::::::::::::::\n");
-		gotoxy(63,33);printf(":: Player dapat %d poin, dan komputer %d poin  ::\n", Player1, Computer);
-		gotoxy(63,34);printf("::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		gotoxy(63,32);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
+		gotoxy(63,33);printf(":: Player dapat %d poin, dan komputer %d poin ::\n", Player1, Computer);
+		gotoxy(63,34);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
 	}
 	else if (players == 2){
-		gotoxy(63,32);printf("::::::::::::::::::::::::::::::::::::::::::::::::\n");
-		gotoxy(63,33);printf(":: Player1 dapat %d poin, dan player2 %d poin  ::\n", Player1, Player2);
-		gotoxy(63,34);printf("::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		gotoxy(63,32);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
+		gotoxy(63,33);printf(":: Player1 dapat %d poin, dan player2 %d poin ::\n", Player1, Player2);
+		gotoxy(63,34);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
 	}
 	return;
 }
@@ -2144,7 +2144,7 @@ void SimpanSkor(int skor){
 	int pilihan;
 	
 	DataSkor = fopen("DataSkor.txt", "ab");
-	printf("\t\t\t\t\tSkor kamu : %d\n", skor);
+	printf("\n\t\t\t\t\tSkor kamu : %d\n", skor);
 	data.skor = skor;
 
 	printf("\t\t\t\t\tMasukkan nama kamu : ");
@@ -2163,17 +2163,13 @@ void showScore(){
     int y = 1;
     
     tampil = fopen("DataSkor.txt", "rb");
-    printf("\t\t\t\t\tPapan Peringkat\n");
+    printf("Papan Peringkat\n");
     while (!feof(tampil)) {
         fscanf(tampil, "%s - %d\n", &data.NamaPemain, &data.skor);
         
         printf("%d. %s - %d\n\n", y, data.NamaPemain, data.skor);
     	y++;
 	}    
-    gotoxy(65,30);printf("Tekan Tombol Untuk Melanjutkan...\n");getch();
-	//KEMBALI KE MENU UTAMA
-	system("CLS");
-	MenuUtama();
 	
 }
 
