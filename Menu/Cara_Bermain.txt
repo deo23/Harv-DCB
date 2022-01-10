@@ -1,0 +1,43 @@
+Cara bermain
+Cara bermain dengan papan 5x5, antara lain :
+[1] Player akan memilih pemilihan pemain yang terdiri dari (Player vs Computer) atau bermain berdua 
+    (Player vs Player).
+[2] akan disediakan map 5x5 dan kotak 5x5 yang harus diisi oleh player. 
+[3] Player akan memilih kotak yang akan diisi.
+[4] Player akan memilih simbol 'S' atau 'O' untuk mengisi kotak yang sudah dipilih.
+[5] Player diminta untuk dapat membentuk SOS baik secara vertikal, horizontal, maupun diagonal agar dapat 
+    mendapatkan poin.
+[6] Player akan diminta untuk menginputkan nama setelah permainan selesai.
+[7] ketika permainan selesai player dapat memilih ingin bermain kembali atau tidak.
+
+Cara bermain dengan papan 7x7, antara lain :
+[1] Player akan memilih pemilihan pemain yang terdiri dari (Player vs Computer) atau bermain berdua 
+    (Player vs Player).
+[2] akan disediakan map 7x7 dan kotak 7x7 yang harus diisi oleh player. 
+[3] Player akan memilih kotak yang akan diisi. 
+[4] Player akan memilih simbol 'S' atau 'O' untuk mengisi kotak yang sudah dipilih.
+[5] Player diminta untuk dapat membentuk SOS baik secara vertikal, horizontal, maupun diagonal agar dapat 
+    mendapatkan poin.
+[6] Player akan diminta untuk menginputkan nama setelah permainan selesai.
+[7] ketika permainan selesai player dapat memilih ingin bermain kembali atau tidak.
+
+Cara bermain dengan papan 9x9, antara lain :
+[1] Player akan memilih pemilihan pemain yang terdiri dari (Player vs Computer) atau bermain berdua 
+    (Player vs Player).
+[2] akan disediakan map 9x9 dan kotak 9x9 yang harus diisi oleh player. 
+[3] Player akan memilih kotak yang akan diisi.
+[4] Player akan memilih simbol 'S' atau 'O' untuk mengisi kotak yang sudah dipilih.
+[5] Player diminta untuk dapat membentuk SOS baik secara vertikal, horizontal, maupun diagonal agar dapat 
+    mendapatkan poin.
+[6] Player akan diminta untuk menginputkan nama setelah permainan selesai.
+[7] ketika permainan selesai player dapat memilih ingin bermain kembali atau tidak.
+
+Aturan game :
+[1] Pada kondisi awal permainan, baik player maupun komputer akan memulai permainan dengan skor masing - masing 0. 
+[2] Player dapat memilih kotak berapa yang akan diisi dan diberi waktu selama 10 detik untuk memilih kotak.
+    jika player tidak dapat memilih kotak dalam waktu lebih dari 10 detik, maka inputan akan secara acak.
+[3] Player akan mengisi kotak yang sudah dipilih dengan simbol 'S' atau 'O'.
+[4] Jika player atau komputer dapat membentuk pola 'SOS' baik secara  vertikal, horizontal, maupun diagonal, 
+    akan memperoleh skor 1 dan giliran tidak akan berpindah sampai SOS tidak terbentuk pada gilirannya.
+[5] Permainan akan berakhir ketika seluruh papan sudah terisi oleh simbol 'S' atau 'O'. Dan pemenang dalam 
+    permainan akan ditentukan dengan skor yang paling tinggi.
