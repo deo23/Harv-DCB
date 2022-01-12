@@ -500,7 +500,7 @@ void gotoxy(int x, int y){
 }
 
 void MenuUtama(){
-    int menu;
+    int menu; //menu adalah variabel lokal bertipe integer berfungsi untuk pilihan dari case menu yang tersedia
     system("CLS");
 	system("color 6");
 	gotoxy(55,7);printf("\n\n\n\n\n");
@@ -526,7 +526,7 @@ void MenuUtama(){
  	gotoxy(70,29);printf(" -----------------------------\n");
     
     gotoxy(70,31);printf("Masukkan Pilihan : ");
-    scanf("%d", &menu);
+    scanf("%d", &menu); //Menginput Pilihan Menu
 
     switch(menu){
         case 1:
@@ -561,7 +561,7 @@ void MenuUtama(){
 
 void CaraBermain(){
 	FILE*the_file = fopen("Cara_Bermain.txt", "r");
-	if(the_file == NULL){
+	if(the_file == NULL){ //Jika File Kosong
 		perror("tidak ada file");
 		exit(1);
 	}
@@ -598,7 +598,7 @@ void Credits() {
 }
 
 void jumlahPemain(){
-    int pemain;
+    int pemain;//variabel lokal bertipe integer berfungsi untuk pilihan dari case menu yang tersedia
 	system("CLS");
 	system("color 3");
 	printf("\n\n\n\n\n\n\n\n\n\n");
@@ -649,7 +649,7 @@ void jumlahPemain(){
 
 void pilihLevel(){
 
-    int level;
+    int level;//variabel lokal bertipe integer berfungsi untuk pilihan dari case menu yang tersedia
 
     system("CLS");
     system("color 5");
@@ -698,7 +698,7 @@ void pilihLevel(){
 }
 
 void pilihPapan(){
-    int jenispapan;
+    int jenispapan;//variabel lokal bertipe integer berfungsi untuk pilihan dari case menu yang tersedia
 
     system("CLS");
     system("color 3");
@@ -757,9 +757,9 @@ void maingame(){
 
 	system("CLS");
 	switch(setup){
-		case 5:
+		case 5: // Kesulitan Mudah Papan 5x5
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Mudah5();
 				if(game_done()){
 					board5();
@@ -778,9 +778,9 @@ void maingame(){
 			}
 		break;
 
-		case 7:
+		case 7:// Kesulitan Mudah Papan 7x7
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Mudah7();
 				if(game_done()){
 					board7();
@@ -799,9 +799,9 @@ void maingame(){
 			}
 		break;
 
-		case 9:
+		case 9:// Kesulitan Mudah Papan 9x9
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Mudah9();
 				if(game_done()){
 					board9();
@@ -820,9 +820,9 @@ void maingame(){
 			}
 		break;
 
-		case 10:
+		case 10:// Kesulitan Menengah Papan 5x5
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Menengah5();
 				if(game_done()){
 					board5();
@@ -841,9 +841,9 @@ void maingame(){
 			}
 		break;
 
-		case 14:
+		case 14:// Kesulitan Menengah Papan 7x7
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Menengah7();
 				if(game_done()){
 					board7();
@@ -862,9 +862,9 @@ void maingame(){
 			}
 		break;
 
-		case 18:
+		case 18:// Kesulitan Menengah Papan 9x9
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Menengah9();
 				if(game_done()){
 					board9();
@@ -883,9 +883,9 @@ void maingame(){
 			}
 		break;
 
-		case 15:
+		case 15:// Kesulitan Sulit Papan 5x5
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Sulit5();
 				if(game_done()){
 					board5();
@@ -904,9 +904,9 @@ void maingame(){
 			}
 		break;
 
-		case 21:
+		case 21:// Kesulitan Sulit Papan 7x7
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Sulit7();
 				if(game_done()){
 					board7();
@@ -925,9 +925,9 @@ void maingame(){
 			}
 		break;
 
-		case 27:
+		case 27:// Kesulitan Sulit Papan 9x9
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				Sulit9();
 				if(game_done()){
 					board9();
@@ -946,9 +946,9 @@ void maingame(){
 			}
 		break;
 
-		case 20:
+		case 20:// Dua Pemain Papan 5x5
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				duaPemain5();
 				if(game_done()){
 					board5();
@@ -971,9 +971,9 @@ void maingame(){
 			}
 		break;
 
-		case 28:
+		case 28:// Dua Pemain Papan 7x7
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				duaPemain7();
 				if(game_done()){
 					board7();
@@ -997,9 +997,9 @@ void maingame(){
 			}
 		break;
 
-		case 36:
+		case 36:// Dua Pemain Papan 9x9
 			while(1){
-				beginBoard();
+				beginBoard();//inisialisasi papan
 				duaPemain9();
 				if(game_done()){
 					board9();
@@ -1035,7 +1035,7 @@ void LangkahPemain5(int player)
 
   do
   {
-	startwaktu = starttime();
+	startwaktu = starttime(); //Timer dimulai
 	
 	board5();
 	printf("\n\n\t\t\tPlayer %d Masukkan kotak yang akan diisi :   ",player);
@@ -1044,13 +1044,13 @@ void LangkahPemain5(int player)
 	{
 		scanf("%d", &kotak);
 	}while (!Cek_Kotak(kotak));
-	startwaktu = endtime() - startwaktu;
+	startwaktu = endtime() - startwaktu; // Timer berhenti
 	waktuinput = ((double)startwaktu)/CLOCKS_PER_SEC;
-    if(waktuinput >10){
+    if(waktuinput >10){ //Jika melebihi batas waktu
 		printf("\n\n\t\t\t\t\t Waktu habis \n");
 		system("pause");
 		srand((unsigned) time(&t));
-		acaksimbol = 1 + rand()% 2;
+		acaksimbol = 1 + rand()% 2; //Mengacak simbol
     	if(acaksimbol == 1){
         simbol = 'S';
     	}
@@ -1058,13 +1058,13 @@ void LangkahPemain5(int player)
         simbol = 'O';
     	}
 		reset:
-    	move = 1 + rand()% 25;
+    	move = 1 + rand()% 25; //Mengacak kotak
 
     	baris = (move-1)/n;
 		kolom = (move-1)%n;
 
     	if(papan[baris][kolom] != ' '){
-        	goto reset;
+        	goto reset;//Jika hasil random tidak valid, proses random diulang
     	}
 		papan[baris][kolom] = simbol;
 	}else if(waktuinput <=10){
@@ -1073,7 +1073,7 @@ void LangkahPemain5(int player)
 		printf("\n\t\t\tSimbol yang ingin dimasukkan %d? (S atau O)  ", kotak);
 		do
 		{
-			simbol = getchar();
+			simbol = getchar();//Meminta Input simbol
 		}while ((simbol != 'S') && (simbol != 's') && (simbol != 'O') && (simbol != 'o') && (simbol != '0'));
 
 		if((simbol == 'S') || (simbol == 's'))
@@ -1085,7 +1085,7 @@ void LangkahPemain5(int player)
 			simbol = 'O';	
 		}
 			
-		papan[baris][kolom] = simbol;
+		papan[baris][kolom] = simbol;//Mengisi kotak dengan simbol
 	}
    }while(cek_sos (player, kotak, simbol) && !game_done()); 
    
@@ -1102,7 +1102,7 @@ void LangkahPemain7(int player)
 	
   do
   {
-	startwaktu = starttime();
+	startwaktu = starttime();//Timer Dimlulai
 	
 	board7();
     printf("\n\n\t\t\tPlayer %d Masukkan kotak yang akan diisi :  ",player);
@@ -1111,14 +1111,14 @@ void LangkahPemain7(int player)
 	{
 		scanf("%d", &kotak);
 	}while (!Cek_Kotak(kotak));
-	startwaktu = endtime() - startwaktu;
+	startwaktu = endtime() - startwaktu;//Timer Berhenti
 	waktuinput = ((double)startwaktu)/CLOCKS_PER_SEC;
 		
-    if(waktuinput >10){
+    if(waktuinput >10){//Jika melebihi batas waktu
 		printf("\n\n\t\t\t\t\t Waktu habis \n");
 		system("pause");
 		srand((unsigned) time(&t));
-		acaksimbol = 1 + rand()% 2;
+		acaksimbol = 1 + rand()% 2;//Mengacak simbol
     	if(acaksimbol == 1){
         simbol = 'S';
     	}
@@ -1126,13 +1126,13 @@ void LangkahPemain7(int player)
         simbol = 'O';
     	}
 		reset:
-    	move = 1 + rand()% 49;
+    	move = 1 + rand()% 49;//Mengacak kotak
 
     	baris = (move-1)/n;
 		kolom = (move-1)%n;
 
     	if(papan[baris][kolom] != ' '){
-        	goto reset;
+        	goto reset;//Jika hasil random tidak valid, proses random diulang
     	}
 		papan[baris][kolom] = simbol;
 	}else if(waktuinput <=10){
@@ -1141,7 +1141,7 @@ void LangkahPemain7(int player)
 		printf("\n\t\t\tSimbol yang ingin dimasukkan %d? (S atau O)  ", kotak);
 		do
 		{
-			simbol = getchar();
+			simbol = getchar();//Meminta Input simbol
 		}while ((simbol != 'S') && (simbol != 's') && (simbol != 'O') && (simbol != 'o') && (simbol != '0'));
 
 		if((simbol == 'S') || (simbol == 's'))
@@ -1153,7 +1153,7 @@ void LangkahPemain7(int player)
 			simbol = 'O';	
 		}
 			
-		papan[baris][kolom] = simbol;
+		papan[baris][kolom] = simbol;//Mengisi kotak dengan simbol
 	}
    }while(cek_sos (player, kotak, simbol) && !game_done()); 
    
@@ -1170,7 +1170,7 @@ void LangkahPemain9(int player)
 	
   do
   {
-	startwaktu = starttime();
+	startwaktu = starttime();//Timer dimulai
 	
 	board9();
     printf("\n\n\t\t\tPlayer %d Masukkan kotak yang akan diisi :  ",player);
@@ -1179,14 +1179,14 @@ void LangkahPemain9(int player)
 	{
 		scanf("%d", &kotak);
 	}while (!Cek_Kotak(kotak));
-	startwaktu = endtime() - startwaktu;
+	startwaktu = endtime() - startwaktu;//Timer Berhenti
 	waktuinput = ((double)startwaktu)/CLOCKS_PER_SEC;
 		
-    if(waktuinput >10){
+    if(waktuinput >10){//Jika melebihi batas waktu
 		printf("\n\n\t\t\t\t\t Waktu habis \n");
 		system("pause");
 		srand((unsigned) time(&t));
-		acaksimbol = 1 + rand()% 2;
+		acaksimbol = 1 + rand()% 2;//Mengacak simbol
     	if(acaksimbol == 1){
         simbol = 'S';
     	}
@@ -1194,13 +1194,13 @@ void LangkahPemain9(int player)
         simbol = 'O';
     	}
 		reset:
-    	move = 1 + rand()% 81;
+    	move = 1 + rand()% 81;//Mengacak kotak
 
     	baris = (move-1)/n;
 		kolom = (move-1)%n;
 
     	if(papan[baris][kolom] != ' '){
-        	goto reset;
+        	goto reset;//Jika hasil random tidak valid, proses random diulang
     	}
 		papan[baris][kolom] = simbol;
 	}else if(waktuinput <=10){
@@ -1209,7 +1209,7 @@ void LangkahPemain9(int player)
 		printf("\n\t\t\tSimbol yang ingin dimasukkan %d? (S atau O)  ", kotak);
 		do
 		{
-			simbol = getchar();
+			simbol = getchar();//Meminta Input simbol
 		}while ((simbol != 'S') && (simbol != 's') && (simbol != 'O') && (simbol != 'o') && (simbol != '0'));
 
 		if((simbol == 'S') || (simbol == 's'))
@@ -1221,7 +1221,7 @@ void LangkahPemain9(int player)
 			simbol = 'O';	
 		}
 			
-		papan[baris][kolom] = simbol;
+		papan[baris][kolom] = simbol;//Mengisi kotak dengan simbol
 	}
    }while(cek_sos (player, kotak, simbol) && !game_done()); 
    
@@ -1232,43 +1232,43 @@ void duaPemain5()
 {
 	do
 	{
-		LangkahPemain5(1);
+		LangkahPemain5(1); //Giliran Player 1
 		if(game_done())
 		{ 
-			return;
+			return;//Giliran berhenti jika papan terisi penuh
 		}
-		LangkahPemain5(2);
+		LangkahPemain5(2);//Giliran Player 2
 	}while (!game_done());
 
-	return;	
+	return;	//Giliran berhenti jika papan terisi penuh
 }
 
 void duaPemain7()
 {
 	do
 	{
-		LangkahPemain7(1);
+		LangkahPemain7(1);//Giliran Player 1
 		if(game_done())
 		{ 
-			return;
+			return;//Giliran berhenti jika papan terisi penuh
 		}
-		LangkahPemain7(2);
+		LangkahPemain7(2);//Giliran Player 2
 	}while (!game_done());
 
-	return;	
+	return;	//Giliran berhenti jika papan terisi penuh
 }
 
 void duaPemain9()
 {
 	do
 	{
-		LangkahPemain9(1);
+		LangkahPemain9(1);//Giliran Player 1
 		if(game_done())
 		{ 
-			return;
+			return;//Giliran berhenti jika papan terisi penuh
 		}
-		LangkahPemain9(2);
-	}while (!game_done());
+		LangkahPemain9(2);//Giliran Player 2
+	}while (!game_done());//Giliran berhenti jika papan terisi penuh
 
 	return;	
 }
@@ -1277,133 +1277,133 @@ void Mudah5(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain5(1);
+				LangkahPemain5(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerMudah5();
+				LangkahKomputerMudah5();//Giliran Komputer
 			}
 					
 		
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Menengah5(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain5(1);
+				LangkahPemain5(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerMenengah5();
+				LangkahKomputerMenengah5();//Giliran Komputer
 			}
 		
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Sulit5(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain5(1);
+				LangkahPemain5(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerSulit5();
+				LangkahKomputerSulit5();//Giliran Komputer
 			}
 					
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Mudah7(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain7(1);
+				LangkahPemain7(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerMudah7();
+				LangkahKomputerMudah7();//Giliran Komputer
 			}
 					
 		
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Menengah7(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain7(1);
+				LangkahPemain7(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerMenengah7();	
+				LangkahKomputerMenengah7();//Giliran Komputer	
 			}
 			
 				
 		
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Sulit7(){
 	while(!game_done())
 	{		
 			if(!game_done()){
-				LangkahPemain7(1);
+				LangkahPemain7(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerSulit7();
+				LangkahKomputerSulit7();//Giliran Komputer
 			}					
 		
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Mudah9(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain9(1);
+				LangkahPemain9(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerMudah9();
+				LangkahKomputerMudah9();//Giliran Komputer
 			}
 					
 		
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Menengah9(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain9(1);
+				LangkahPemain9(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerMenengah9();	
+				LangkahKomputerMenengah9();	//Giliran Komputer
 			}
 			
 				
 		
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 void Sulit9(){
 	while(!game_done())
 	{	
 			if(!game_done()){
-				LangkahPemain9(1);
+				LangkahPemain9(1);//Giliran Player 1
 			}
 			if(!game_done()){
-				LangkahKomputerSulit9();
+				LangkahKomputerSulit9();//Giliran Komputer
 			}
 					
 	}
-	return;
+	return;//Giliran berhenti jika papan terisi penuh
 }
 
 
@@ -1417,7 +1417,7 @@ void KomputerMudah5(){
 
 
     
-    acaksimbol = 1 + rand()% 2;
+    acaksimbol = 1 + rand()% 2;//Mengacak Simbol
     if(acaksimbol == 1){
         simbol = 'S';
     }
@@ -1426,18 +1426,18 @@ void KomputerMudah5(){
     }
 
     reset:
-    move = 1 + rand()% 25;
+    move = 1 + rand()% 25;//Mengacak kotak
 
     baris = (move-1)/n;
 	kolom = (move-1)%n;
 
     if(papan[baris][kolom] != ' '){
-        goto reset;
+        goto reset;//Jika hasil random tidak valid, proses random diulang
     }
     else{
-        papan[baris][kolom] = simbol;
+        papan[baris][kolom] = simbol;//Mengisi kotak dengan simbol
     }
-	printf("Komputer memasukkan %c ke kotak %d\n", simbol, move);
+	
 	}while(cek_sos (3, move, simbol) && !game_done());
 }
 
@@ -1451,7 +1451,7 @@ void KomputerMudah7(){
 
 
     
-    acaksimbol = 1 + rand()% 2;
+    acaksimbol = 1 + rand()% 2;//Mengacak Simbol
     if(acaksimbol == 1){
         simbol = 'S';
     }
@@ -1460,18 +1460,18 @@ void KomputerMudah7(){
     }
 
     reset:
-    move = 1 + rand()% 49;
+    move = 1 + rand()% 49;//Mengacak kotak
 
     baris = (move-1)/n;
 	kolom = (move-1)%n;
 
     if(papan[baris][kolom] != ' '){
-        goto reset;
+        goto reset;//Jika hasil random tidak valid, proses random diulang
     }
     else{
-        papan[baris][kolom] = simbol;
+        papan[baris][kolom] = simbol;//Mengisi kotak dengan simbol
     }
-	printf("Komputer memasukkan %c ke kotak %d\n", simbol, move);
+	
 	}while(cek_sos (3, move, simbol));
 }
 
@@ -1485,7 +1485,7 @@ void KomputerMudah9(){
 
 
     
-    acaksimbol = 1 + rand()% 2;
+    acaksimbol = 1 + rand()% 2;//Mengacak Simbol
     if(acaksimbol == 1){
         simbol = 'S';
     }
@@ -1494,18 +1494,18 @@ void KomputerMudah9(){
     }
 
     reset:
-    move = 1 + rand()% 81;
+    move = 1 + rand()% 81;//Mengacak kotak
 
     baris = (move-1)/n;
 	kolom = (move-1)%n;
 
     if(papan[baris][kolom] != ' '){
-        goto reset;
+        goto reset;//Jika hasil random tidak valid, proses random diulang
     }
     else{
-        papan[baris][kolom] = simbol;
+        papan[baris][kolom] = simbol;//Mengisi kotak dengan simbol
     }
-	printf("Komputer memasukkan %c ke kotak %d\n", simbol, move);
+	
 	}while(cek_sos (3, move, simbol));
 }
 
@@ -1516,17 +1516,17 @@ void KomputerSulit(){
 
     do{
        
-	    if(comp_find_os()){
+	    if(comp_find_os()){// Jika terdapat O dan S yang berdekatan
 		kotak = comp_find_os();
-		simbol = 'S';
+		simbol = 'S';//Komputer akan menginput S
 	    }
-	    else if(comp_find_ss()){
+	    else if(comp_find_ss()){// Jika terdapat kotak kosong diantara S dan S
 		kotak = comp_find_ss();
-		simbol = 'O';
+		simbol = 'O';//Komputer akan menginput O
 	    }
-	    else{
+	    else{// Jika tidak terdapat keduanya
 		kotak = find_square();
-		simbol = 'S';
+		simbol = 'S';//Komputer akan menginput S di kotak yang paling kecil
 	    }
 	    baris = (kotak-1)/n;
 	    kolom = (kotak-1)%n;
@@ -1558,13 +1558,13 @@ void LangkahKomputerMudah9(){
 }
 
 void LangkahKomputerMenengah5(){
-	if(Player1 < 5){
-		KomputerMudah5();
+	if(Player1 < 5){// Jika skor player lebih kecil dari 5
+		KomputerMudah5();//Akan dipanggil Komputer dengan tingkat kesulitan Mudah
 	
     	board5();
 	}
-	else{
-		KomputerSulit();
+	else{// Jika skor player lebih besar atau sama dengan 5
+		KomputerSulit();//Akan dipanggil Komputer dengan tingkat kesulitan Sulit
 		board5();
 	}
 
@@ -1572,13 +1572,13 @@ void LangkahKomputerMenengah5(){
 }
 
 void LangkahKomputerMenengah7(){
-	if(Player1 < 5){
-		KomputerMudah7();
+	if(Player1 < 5){// Jika skor player lebih kecil dari 5
+		KomputerMudah7();//Akan dipanggil Komputer dengan tingkat kesulitan Mudah
 	
     	board7();
 	}
-	else{
-		KomputerSulit();
+	else{// Jika skor player lebih besar atau sama dengan 5
+		KomputerSulit();//Akan dipanggil Komputer dengan tingkat kesulitan Sulit
 		board7();
 	}
 
@@ -1586,13 +1586,13 @@ void LangkahKomputerMenengah7(){
 }
 
 void LangkahKomputerMenengah9(){
-	if(Player1 < 5){
-		KomputerMudah9();
+	if(Player1 < 5){// Jika skor player lebih kecil dari 5
+		KomputerMudah9();//Akan dipanggil Komputer dengan tingkat kesulitan Mudah
 	
     	board9();
 	}
-	else{
-		KomputerSulit();
+	else{// Jika skor player lebih besar atau sama dengan 5
+		KomputerSulit();//Akan dipanggil Komputer dengan tingkat kesulitan Sulit
 		board9();
 	}
 
@@ -1620,7 +1620,7 @@ void LangkahKomputerSulit9(){
 int comp_find_os(){
 	int kotak, i, j;
 
-	for (i=0; i<n; i++){
+	for (i=0; i<n; i++){//Mengecek apakah ada O dan S yang berdekatan
 		for(j=0; j<n; j++){
 		   kotak = ((i*n) +j)+1;
 		   if(Cek_Kotak(kotak)){
@@ -1651,13 +1651,13 @@ int comp_find_os(){
 		  }
 		}
 	}
-	return 0;
+	return 0;// Jika tidak ada, return 0
 }
 
 int comp_find_ss(){
 	int kotak, i, j;
 
-    for (i=0; i<n; i++){
+    for (i=0; i<n; i++){//Mengecek apakah ada kotak kosong diantara S dan S
         for(j=0; j<n; j++){  
             kotak = ((i*n) +j)+1;
 
@@ -1678,12 +1678,12 @@ int comp_find_ss(){
             }
 		}
     }
-	return 0;
+	return 0;//Jika tidak ada, return 0
 }
 
 int find_square(){
 	int baris, kolom, kotak;
-	
+	//Mencari kotak terkecil yang masih kosong
 	for (kotak=1; kotak<((n*n)+1); kotak++){
 		baris = (kotak-1)/n;
 		kolom = (kotak-1)%n;
@@ -1702,17 +1702,17 @@ int Cek_Kotak (int kotak)
 	baris = (kotak-1)/n;
 	kolom = (kotak-1)%n;
 
-	if (papan[baris][kolom]==' '){
+	if (papan[baris][kolom]==' '){//Jika kotak masih kosong
 		return 1;
 	}
 	else{
 		
-		return 0;
+		return 0;//Jika kotak sudah terisi
 	} 
   }
   else{
 	  
-	  return 0;
+	  return 0;//Jika input tidak valid
   }
 }
 
@@ -1725,7 +1725,7 @@ int cek_sos (int player, int kotak, char simbol)
 	kolom = (kotak-1)%n;
 	sos = 0;
 		
-  if(simbol == 'S'){
+  if(simbol == 'S'){//Mengecek sos jika input simbol S
   
 		if ((papan[baris][kolom-2] == 'S') && (papan[baris][kolom-1] == 'O') && (kolom-2>=0) && (kolom-1>=0)){	
 			sos++;
@@ -1757,7 +1757,7 @@ int cek_sos (int player, int kotak, char simbol)
 	
 	
   }
-  else if(simbol == 'O'){
+  else if(simbol == 'O'){//Mengecek sos jika input simbol O
   
 	if((papan[baris+1][kolom] == 'S') && (papan[baris-1][kolom] == 'S') && (baris-1>=0))
 	{
@@ -1781,23 +1781,23 @@ int cek_sos (int player, int kotak, char simbol)
 
         if (player == 1)
         {
-                Player1= Player1+sos;
+                Player1= Player1+sos;//Perolehan sos player 1 bertambah
 				
         }
         else if (player == 2)
         {
-                 Player2= Player2+sos;
+                 Player2= Player2+sos;//Perolehan sos player 2 bertambah
         }
         else if (player == 3 && !game_done())
         {
-                 Computer= Computer+sos;
+                 Computer= Computer+sos;//Perolehan sos computer bertambah
         }
 	
 
 
 	if (sos>0 && !game_done())
 	{
-		return 1;
+		return 1;//Jika terbentuk SOS dan papan belum terisi penuh
 	}
 	else
 	{
@@ -1811,12 +1811,12 @@ void beginBoard(){
 	{
 		for (kolom=0; kolom<n; kolom++)
 		{
-			papan[baris][kolom]=' ';
+			papan[baris][kolom]=' ';//Menginisilaisasi papan awal dengan spasi atau ' ' 
 		}
 	}
-	Player1 = 0;
-	Player2 = 0;
-	Computer = 0;
+	Player1 = 0;//Inisialisasi perolehan sos player 1
+	Player2 = 0;//Inisialisasi perolehan sos player 2
+	Computer = 0;//Inisialisasi perolehan sos computer
 	
 	return;
 }
@@ -1865,7 +1865,7 @@ void board5(){
 	printf("\n");		
 	if(players == 1){
 		gotoxy(63,26);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
-		gotoxy(63,27);printf(":: Player dapat %d poin, dan komputer %d poin::\n", Player1, Computer);
+		gotoxy(63,27);printf(":: Player dapat %d poin, dan komputer %d poin ::\n", Player1, Computer);
 		gotoxy(63,28);printf("::::::::::::::::::::::::::::::::::::::::::::::\n");
 	}
 	else if (players == 2){
@@ -2041,12 +2041,12 @@ int game_done(){
 		{
 			if (papan[baris][kolom] == ' ')
 			{
-				return 0;
+				return 0;//Jika masih terdapat papan yang kosong, return 0
 			}
 		}
 	}
 	
-	return 1;
+	return 1;//Jika papan sudah terisi penuh, return 1
 }
 
 void pemenang()
@@ -2094,42 +2094,42 @@ void HitungSkor(){
 
 	
 	switch(setup){
-		case 5:
+		case 5://Menghitung skor untuk tingkat kesulitan Mudah 5x5
 			Player1*=50;
 			break;
 		case 7:
-			Player1*=70;
+			Player1*=70;//Menghitung skor untuk tingkat kesulitan Mudah 7x7
 			break;
-		case 9:
+		case 9://Menghitung skor untuk tingkat kesulitan Mudah 9x9
 			Player1*=90;
 			break;
-		case 10:
+		case 10://Menghitung skor untuk tingkat kesulitan Menengah 5x5
 			Player1*=100;
 			break;
-		case 14:
+		case 14://Menghitung skor untuk tingkat kesulitan Menengah 7x7
 			Player1*=140;
 			break;
-		case 18:
+		case 18://Menghitung skor untuk tingkat kesulitan Menengah 9x9
 			Player1*=180;
 			break;
-        case 15:
+        case 15://Menghitung skor untuk tingkat kesulitan Sulit 5x5
 			Player1*=150;
 			break;
-        case 21:
+        case 21://Menghitung skor untuk tingkat kesulitan Sulit 7x7
 			Player1*=210;
 			break;
-        case 27:
+        case 27://Menghitung skor untuk tingkat kesulitan Sulit 9x9
 			Player1*=270;
 			break;
-        case 20:
+        case 20://Menghitung skor untuk tingkat dua pemain 5x5
 			Player1*=250;
             Player2*=250;
 			break;
-        case 28:
+        case 28://Menghitung skor untuk tingkat dua pemain 7x7
 			Player1*=350;
             Player2*=350;
 			break;
-        case 36:
+        case 36://Menghitung skor untuk tingkat dua pemain 9x9
 			Player1*=500;
             Player2*=500;
 			break;
